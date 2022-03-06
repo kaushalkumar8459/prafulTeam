@@ -1,0 +1,31 @@
+Class Note
+
+npm install -g @angular/cli
+ng new angularproject
+Would you like to add Angular routing ?
+ng serve
+
+Ctrl + c —> disconnecting terminal
+
+
+Js → java script
+Ts —> Typescript
+
+
+Js:- JavaScript   <script>
+Css :- Cascading style sheet     <style>
+
+Open console in browser :- ctrl + shift + J
+
+
+for running project:-
+>>>>ng serve
+
+Here for creating file we using term component:-
+ways of creating componment:-
+>>>>> ng g c componentname
+ex:- ng g c home
+
+where we will write command
+>>>> open integrated terminal by right clicking on the project folder.
+
