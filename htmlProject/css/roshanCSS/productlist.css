@@ -1,0 +1,41 @@
+h4 {
+    font-weight: bold;
+}
+
+.allhead {
+    margin-top: 40px;
+
+}
+
+img {
+    width: 40px;
+    height: 40px;
+}
+
+a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.product_price {
+    color: red;
+}
+
+.oldprice {
+    color: rgb(189, 184, 184);
+    font-size: small;
+}
+
+.category {
+    color: rgb(189, 184, 184);
+}
+
+a {
+    color: black;
+}
+.allhead{
+   margin-left: 30px;
+}
+body{
+   overflow-x: hidden;
+}
