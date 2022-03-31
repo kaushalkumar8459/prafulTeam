@@ -1,0 +1,54 @@
+.searchbar {
+    margin-top: 16%; 
+}
+
+.icons {
+   margin-left: 40%;
+}
+
+.btn {
+   background-color: red;
+}
+
+section {
+   display: flex;
+   justify-content: center;
+   min-height: 45px;
+
+
+}
+
+.heading {
+   /* display: flex; */
+    justify-content: center;
+   margin-left: 35%;
+}
+
+.btn {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 190px;
+   border-style: none;
+}
+
+input {
+   width: 400px;
+   padding-left: 22px;
+   border-radius: 25px 0px 0px 25px;
+   border: 1px solid black;
+   margin-left:0%;
+}
+
+.icons {
+   margin-left: 45%;
+}
+
+
+.btn {
+   border-radius: 0px 25px 25px 0px;
+}
+
+body{
+   background-image: url("C:\Users\ranga\Desktop\tranning\prafulTeam\htmlProject\image\roshan images\mail.jpg");
+} 
