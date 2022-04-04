@@ -1,0 +1,278 @@
+
+<!-- saved from url=(0012)about:srcdoc -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+				body {
+					font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+					margin:5px 15px;
+					color:#344154;
+				 }
+				input,select,button {
+					outline:none
+				}
+				h3 {
+					width:80%;
+					display:inline-block;
+				}
+				#lw_overlay_close {
+					position:absolute;
+					right:15px;
+					top:20px;
+					cursor:pointer;
+					border:none;
+					width:20px;
+					height:20px;
+					background:transparent url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjEyIiBoZWlnaHQ9Ijc5MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KCiA8Zz4KICA8dGl0bGU+YmFja2dyb3VuZDwvdGl0bGU+CiAgPHJlY3QgZmlsbD0ibm9uZSIgaWQ9ImNhbnZhc19iYWNrZ3JvdW5kIiBoZWlnaHQ9IjQwMiIgd2lkdGg9IjU4MiIgeT0iLTEiIHg9Ii0xIi8+CiA8L2c+CiA8Zz4KICA8dGl0bGU+TGF5ZXIgMTwvdGl0bGU+CiAgPHBvbHlnb24gZmlsbD0iIzM0NDE1NCIgaWQ9InN2Z18yIiBwb2ludHM9IjM4Mi4yLDM5Ni40IDU2MC44LDIxNy44IDQ4NCwxNDEgMzA1LjQsMzE5LjYgMTI2LjgsMTQxIDUwLDIxNy44IDIyOC42LDM5Ni40IDUwLDU3NSAxMjYuOCw2NTEuOCAgICAzMDUuNCw0NzMuMiA0ODQsNjUxLjggNTYwLjgsNTc1IDM4Mi4yLDM5Ni40ICAiIGNsYXNzPSJzdDAiLz4KIDwvZz4KPC9zdmc+") no-repeat;
+					background-size:contain;
+				}
+				#js_client_name, #js_project_name, #js_client {
+					height:34px;
+					font-size:14px;
+				}
+				.lw-form-control {
+					display:block;
+					width:-webkit-fill-available;
+					height:50px;
+					padding:0 0 0 15px;
+					font-size:16px;
+					line-height:1.42857143;
+					color:#555;
+					background:#fff none;
+					border:1px solid #ccc;
+					border-radius:4px;
+					-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
+					box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
+					-webkit-transition:border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+					-o-transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+					transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+					margin-top:35px;
+				}
+				.choose_project .lw-form-control {
+					margin-top:0;
+				}
+				label, .project_label {
+					display:inline-block;
+					max-width:100%;
+					color:#344154;
+					font-size:14px;
+				}
+				.update_project, .save_project {
+					cursor:pointer;
+					background-color:#28b62c;
+					border-color:#23a127;
+ 				color:#fff;
+					user-select:none;
+					border-radius:4px;
+					font-weight:bold;
+					border-width:1px 1px 4px 1px;
+					padding:12px;
+					width:100%;
+					margin:25px 0;
+					font-size:16px;
+					font-weight:bold;
+					border-style:solid;
+					text-shadow:0 1px 0 rgb(0 0 0 / 22%);
+				}
+				.save_project {
+					margin:0;
+				}
+				.update_project:hover,
+				.save_project:hover {
+				 background-color:#419641;
+				 background-position:0 -15px;
+				 border-color:#419641;
+				}
+				.cancel {
+					cursor:pointer;
+					color:#555;
+					background-color:#eee;
+					border-color:#c1c1c1 !important;
+					user-select:none;
+					border-radius:4px;
+					font-weight:bold;
+					border-width:1px 1px 4px 1px;
+					border-style:solid;
+					padding:12px;
+					width:100%;
+					margin:5px 0;
+					font-size:16px;
+					font-weight:bold;
+					text-shadow:0 1px 0 #fff;
+				}
+				.cancel:hover {
+				 background-color:#e0e0e0;
+				 background-position:0 -15px;
+				}
+				.choose_project div:first-child {
+					cursor:pointer;
+					position:relative;
+					border:1px solid;
+					left:10px;
+					padding:6px 10px;
+					margin-top:-1px;
+					border-top:none;
+					background:#fff;
+					border-color:#ddd;
+					border-bottom-left-radius:5px;
+					border-bottom-right-radius:5px;
+					width:max-content;
+				}
+				.div_selector {
+					position:absolute; 
+					box-shadow:9px 9px 20px 0px rgb(0 0 0 / 20%);
+					background-color:#ffffff;
+					min-width:300px;
+					max-height:300px;
+					overflow:scroll;
+					overflow-x:hidden;
+					border:1px solid #bfbfbf;
+					z-index:9;
+					top:20px;
+					left:50px;
+					right:50px;
+					bottom:0;
+					border-top-left-radius:4px;
+					border-bottom-left-radius:4px;
+				}
+				.hide {
+					display:none;
+				}
+				.link {
+					cursor:pointer;
+					color:#5469d4;
+					text-decoration:none;
+					transition:all .25s ease-in-out;
+					-webkit-transition:all .25s ease-in-out;
+					-moz-transition:all .25s ease-in-out;
+					-o-transition:all .25s ease-in-out;
+				}
+				.link:hover {
+					color:#000;
+				}
+				.div_selector .select_row {
+					padding-left:20px;
+					cursor:pointer;
+					font-size:13px;
+				}
+				.select_row, .select_h {
+					border-bottom:1px solid #e6e6e6;
+					padding:6px;
+				}
+				.div_selector .select_h {
+					font-weight:bold;
+					padding-left:6px;
+					background-color:#f8f8f8;
+					font-size:13px;
+				}
+				.fa-folder-custom,.fa-user-custom, 
+				.fa-long-arrow-right-custom, 
+				.fa-cancel-custom, 
+				.fa-plus-custom,
+			 	.fa-check-custom, .fa-cancel-custom{
+					width:13px;
+					height:14px;
+					display:inline-block;
+					background-size:contain !important;
+					vertical-align:bottom;
+					background-repeat:no-repeat !important;
+				}
+				.update_project .fa-check-custom, .cancel .fa-cancel-custom, .save-project .fa-check-custom {
+					background-repeat:no-repeat;
+					height:16px;
+				}
+				.project_label .fa-plus-custom {
+					height:15px;
+				}
+				.fa-user-custom {
+					background:url(chrome-extension://ehagagfefdlncfmdnnegoagdemnfehdc/icons/user.png);
+				}
+				.fa-folder-custom {
+					background:url(chrome-extension://ehagagfefdlncfmdnnegoagdemnfehdc/icons/folder.png);
+				}
+				.fa-long-arrow-right-custom {
+					background:url(chrome-extension://ehagagfefdlncfmdnnegoagdemnfehdc/icons/arrow_right.png);
+				}
+				.fa-plus-custom {
+					background:url(chrome-extension://ehagagfefdlncfmdnnegoagdemnfehdc/icons/plus.png);
+				}
+				.fa-cancel-custom {
+					background:url(chrome-extension://ehagagfefdlncfmdnnegoagdemnfehdc/icons/cancel.png);
+				}
+				.fa-check-custom {
+					background:url(chrome-extension://ehagagfefdlncfmdnnegoagdemnfehdc/icons/check.png);
+				}
+				#add_new_project_block {
+					border:1px solid #ddd;
+					padding:15px;
+					border-radius:8px;
+					position:absolute;
+					top:20px;
+					bottom:20px;
+					right:20px;
+					left:20px;
+					background:#fff;
+					z-index:2;
+				}
+				#add_new_project_block label {
+					font-weight:700;
+					margin-bottom:5px;
+				}
+				#inside_overlay {
+					position:absolute;
+					background:rgba(0,0,0,0.5);
+					top:0;bottom:0;left:0;right:0;
+					z-index:1;
+				}
+				.help-block {
+					color:red;
+					font-size:12px;
+				}
+				.save_project:disabled {
+					opacity:.5;
+					cursor:not-allowed;
+				}
+			</style>
+		</head><body><div id="inside_overlay" class="hide"></div>
+		<h3>Time Tracking</h3>
+		<button id="lw_overlay_close"></button>
+		<!--start fieldset-->
+		<fieldset style="padding:unset;border:none;">
+			<div class="form-group">
+				<input type="text" class="lw-form-control lw_button_description" id="js_note" name="description" autocorrect="off" autocapitalize="off" placeholder="">
+			</div>
+			<div class="form-group choose_project">
+				<div>
+					<span class="project_label" id="js_add_project_to_entry"> <i class="fa-plus-custom"></i> Project</span>
+				</div>
+			</div>
+			<div id="js_project_selector" class="hide"></div>
+			<input type="hidden" id="js_choosen_project">
+			<br>
+			<button id="js_time_save" class="update_project"><i class="fa-check-custom"></i> Save changes</button>
+			<!--create new client/project modal-->
+			<div id="add_new_project_block" class="hide">
+				<div class="form-group choose_project">
+					<label>Project</label>
+					<input class="lw-form-control" type="text" id="js_project_name" placeholder="Project name" autocapitalize="off">
+					<span class="help-block hide">Project name is required.</span>
+				</div>
+				<br>
+				<div class="form-group">
+					<label>Client</label>
+					<label style="float:right">
+						<a id="js_new_client" class="link" target="_blank"><i class="fa-plus-custom"></i> Create a New Client</a>
+						<a id="js_choose_client" class="link" target="_blank" style="display:none;"><i class="fa-cancel-custom"></i> Cancel</a>
+					</label>
+					<div class="clearfix"></div>
+					<select class="lw-form-control" id="js_client" style="margin-top:0;">
+						<option value="">-- Choose a client --</option>
+					</select>
+					<input class="lw-form-control" id="js_client_name" placeholder="Client name" autocomplete="off" autocapitalize="off" style="display:none;margin-top:0;">
+					<br>
+					<button id="js_add_project_save" class="save_project"><i style="height:15px;vertical-align:middle;" class="fa-check-custom"></i> Save</button>
+					<button id="js_cancel" class="cancel"><i class="fa-cancel-custom"></i> Cancel</button>
+				</div>
+			</div>
+			<!-- end create new client/project modal-->
+		</fieldset>
+		<!--end fieldset-->
+		</body></html>
